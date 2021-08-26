@@ -1,0 +1,225 @@
+body{
+    background: linear-gradient(
+        to left,
+        #010766,
+        #5a0183fb
+    );
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+button{
+    border-color: aqua;
+    color: aqua;
+    background: transparent;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+button:hover{
+    border: none;
+    background: aqua;
+    color: rgb(3, 28, 97);
+}
+
+p{
+    font-size: 15pt;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(6, 118, 223);
+}
+
+a:hover{
+    color: #fff;
+}
+
+h2{
+    color: #04d0eb91;
+}
+
+
+
+#username{
+    width: 500px;
+    font-size: 16pt;
+}
+
+#email{
+    width: 500px;
+    font-size: 16pt;
+}
+
+#body{
+    width: 500px;
+    height: 100px;
+    font-size: 16pt;
+}
+
+
+
+
+
+#like{
+    color: green;
+}
+
+#dislike{
+    color: rgba(170, 9, 4, 0.685);
+}
+
+#LIKE{
+    cursor: pointer;
+    height: 50px;
+    border-radius: 10px;
+    width: 100px;
+    background: transparent;
+    border-style: solid;
+    color: green;
+    border-color: green;
+    border-width: 2px;
+
+
+}
+
+#DISLIKE{
+    border-style: solid;
+    border-color: red;
+    background: transparent;
+    border-width: 2px;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 10px;
+    width: 100px;
+    color: red;
+}
+
+
+#LIKE:hover{
+    
+    border: none;
+    background: rgb(1, 139, 70);
+    color: rgba(250, 250, 250, 0.795);
+}
+
+
+#DISLIKE:hover{
+    border: none;
+    background: red;
+    color: #fff;
+}
+
+.pts{
+    font-size: 30pt;
+}
+
+h3{
+    font-size: 20pt;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+h2{
+    font-size: 30pt;
+}
+
+
+.container-comment{
+    background: #150036;
+    color: #fff;
+    max-width: 500px;
+    border-radius: 10px;
+    min-height: 120px;
+}
+
+
+.new-comment{
+
+}
+
+#sended{
+    background-color: transparent;
+    border-style: solid;
+    border-color: blue;
+    color: blue;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 15pt;
+    border-radius: 5px;
+}
+
+#sended:hover{
+    color: #fff;
+    background: blue;
+    border: none;
+}
+
+#body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulary{
+    font-size: 20pt;
+    color: rgba(255, 255, 255, 0.719);
+}
+
+.imagen{
+    width: 350px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #010766;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1000px){
+	.container-comment{
+    	background: #150036;
+		color: #fff;
+    	min-width: 100%;
+  	 	border-radius: 10px;
+    	min-height: 120px;
+	}
+
+
+#username{
+    width: 95%;
+    font-size: 16pt;
+}
+
+#email{
+    width: 95%;
+    font-size: 16pt;
+}
+
+#body{
+    width: 95%;
+    height: 100px;
+    font-size: 16pt;
+}
+
+
+.imagen{
+    width: 80%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #010766;
+    cursor: pointer;
+}
+
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Task</title>
+    <%- include("partials/linkRel.html") %>
+</head>
+<body class="container" id="body">
+
+    <div class="formulary">
+        <div class="text-center" align="center">Write a new Comment</div>
+
+        <form method="POST">
+            <div class="form-group">
+                <label for="username" align="center">Name</label><br>
+                    <input 
+                        type="text" 
+                        name="username"
+                        id="username" 
+                        class="form-control" 
+                        placeholder="your name" 
+                        required
+                    >
+            </div>
+            <div class="form-group">
+                <label for="email" align="center">Tu Email</label><br>
+                    <input 
+                        type="email" 
+                        name="email"
+                        id="email" 
+                        class="form-control" 
+                        placeholder="tu email" 
+                        required
+                    >
+            </div>
+            <div class="form-group"> 
+                <label for="body">Entry Comment</label><br>
+                <textarea
+                    class="form-control"
+                    id="body"
+                    name="body"
+                    rows="3"
+                    required
+                >
+                </textarea>
+            </div>
+
+            <div class="form-group">
+                <input 
+                    type="submit" 
+                    value="Publicar"
+                    class="btnSend" 
+                    id="sended"
+                >
+            </div>
+        </form>
+    </div>
+</body>
+</html>

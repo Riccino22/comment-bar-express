@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express comment</title>
+    <%- include("partials/linkRel.html") %>
+</head>
+<body class="container" id="bdy">
+
+
+    <%- include("partials/header.html") %>
+
+    <div align="center">
+        <p class="pts"><strong id="like">PTS + </strong> <%= likesNum %> <br>
+        <strong id="dislike">PTS - </strong> <%= disLikesNum %></p>
+        <h3>Asignale un puntaje a esta publicacion <br> mediante el uso de likes y dislikes</h3>
+        <form method="POST">
+            <label for="LIKE"></label>
+            <input type="submit" value="LIKE" type="LIKE" name="LIKE" id="LIKE">
+            <label for="DISLIKE"></label>
+            <input type="submit" value="DISLIKE" type="DISLIKE" name="DISLIKE" id="DISLIKE"> 
+        </form>
+
+    </div> 
+
+<br>
+
+<div class="formulary">
+    <div class="text-center" align="center">Write a new Comment</div>
+
+    <form method="POST" align="center">
+        <div class="form-group">
+            <label for="username" align="center">Name</label><br>
+                <input 
+                    type="text" 
+                    name="username"
+                    id="username" 
+                    class="form-control" 
+                    placeholder="your name" 
+                    required
+                >
+        </div>
+        <div class="form-group">
+            <label for="email" align="center">Tu Email</label><br>
+                <input 
+                    type="email" 
+                    name="email"
+                    id="email" 
+                    class="form-control" 
+                    placeholder="tu email" 
+                    required
+                >
+        </div>
+        <div class="form-group"> 
+            <label for="body">Entry Comment</label><br>
+            <textarea
+                class="form-control"
+                id="body"
+                name="body"
+                rows="3"
+                required
+            >
+            </textarea>
+        </div>
+
+        <div class="form-group">
+            <input 
+                type="submit" 
+                value="Publicar"
+                class="btnSend" 
+                id="sended"
+            >
+        </div>
+    </form>
+</div>
+
+
+
+
+    <% if(entries.length) {    %> 
+    
+      <%  entries.forEach(function(entry){    %>
+            
+
+        <div align="center">
+                <div class="container-comment">
+                <h4><a href="mailto:<%= entry.email %>"><%= entry.username %></a></h4>
+                <p><%= entry.content %></p>
+                <p style="color:#7cb8fd"><%= entry.published %><p> 
+        </div>
+        </div>
+        
+      <% }) %>
+    
+    
+    
+   <% } else { %>
+        
+        <h1 align="center">No hay no hay comentarios <a href="#username">Sé el primero</a></h1>
+    
+    <% } %>
+
+    <div align="center">
+        <br>
+        <button onclick="location.reload()">ACTUALIZAR DATOS</button>
+    </div>
+
+</body>
+</html>
